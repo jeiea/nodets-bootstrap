@@ -1,0 +1,32 @@
+{
+  "name": "nodets-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.8",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "ts-loader": "^5.4.4",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "pack-dev": "npx webpack --config ./webpack/dev.config.js",
+    "pack-prod": "npx webpack --config ./webpack/prod.config.js",
+    "repl": "npx ts-node -r ./src/app.ts",
+    "test": "mocha -r ts-node/register ./test/**/*.test.ts"
+  },
+  "author": "jeiea",
+  "license": "ISC"
+}

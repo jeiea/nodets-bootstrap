@@ -1,0 +1,14 @@
+# executables
+/exe/
+
+# dependencies
+node_modules/
+
+# build results
+/build/
+/dist/
+*.js
+*.js.map
+!*.config.js
+
+*.log
